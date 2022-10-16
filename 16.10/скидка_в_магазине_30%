@@ -1,0 +1,11 @@
+s=int(input("Введите сумму: "))
+t=0
+r=0
+if s>1000:
+    print("Применяем скидку...")
+    t=s/100*30
+    r=s-t
+    print(r)
+else:
+    print(s)
+    
