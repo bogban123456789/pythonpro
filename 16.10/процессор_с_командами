@@ -1,0 +1,28 @@
+import pyautogui
+import time
+import pyperclip
+a=input("Введите команду (не забудь перенести мышь в окно консоли и переключить на английскую клавиатуру!): ")
+if a=="поиск":
+    s=input("Введите запрос (Не забудь переключить язык на английский, иначе не сработает!): ")
+    pyperclip.copy(s)
+    pyautogui.hotkey('win','r')
+    pyautogui.write("firefox.exe",interval=0.05)
+    pyautogui.press("enter")
+#tet=input()
+#print(pyautogui.position())
+#x1066y154
+    time.sleep(10)
+    pyautogui.moveTo(1066,154)
+    pyautogui.click()
+    pyautogui.hotkey('ctrl','v')
+    pyautogui.press('enter')
+if a=="текст":
+    pyautogui.hotkey('win','r')
+    pyautogui.write("notepad",interval=0.05)
+    pyautogui.press('enter')
+if a=="выход":
+    #tet=input()
+    #print(pyautogui.position())
+    #x1764y16
+    pyautogui.moveTo(1764,16)
+    pyautogui.click()
