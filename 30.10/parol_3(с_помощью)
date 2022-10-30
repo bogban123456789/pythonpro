@@ -1,0 +1,18 @@
+lv="bs1234"
+pv="prl1234"
+l=input()
+p=input()
+while (l!=lv) or (p!=pv):
+    if l!=lv:
+        print("логин неправильный")
+        l=input()
+        p=input()
+    elif p!=pv:
+        print("пароль неправильный")
+        l=input()
+        p=input()
+    elif l!=lv and p!=pv:
+        print("логин неверный")
+        l=input()
+        p=input()
+print("вход выполнен")
