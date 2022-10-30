@@ -1,0 +1,7 @@
+login=input("Введите логин:")
+password=input("Введите пароль:")
+while login!="BogdanSosnovskiy1234" or password!="parol1234":
+    print("Неправильный логин или пароль! Попробуйте снова.")
+    login=input("Введите логин:")
+    password=input("Введите пароль:")
+print("Вход успешно выполнен.")
