@@ -1,0 +1,49 @@
+login=input("Введите логин:")
+password=input("Введите пароль:")
+a=0
+b=0
+while login!="BogdanSosnovskiy1234":
+    a=1
+    break
+while password!="parol1234":
+    b=1
+    break
+while a==1 and b==0:
+    print("Неправильный логин! Попробуйте снова.")
+    login=input("Введите логин:")
+    password=input("Введите пароль:")
+    while login=="BogdanSosnovskiy1234":
+        a=0
+        break
+    while password=="parol1234":
+        b=0
+        break
+while b==1 and a==0:
+    print("Неправильный пароль! Попробуйте снова.")
+    login=input("Введите логин:")
+    password=input("Введите пароль:")
+    while login=="BogdanSosnovskiy1234":
+        a=0
+        break
+    while password=="parol1234":
+        b=0
+        break
+while a==1 and b==1:
+    print("Неправильный логин! Попробуйте снова.")
+    login=input("Введите логин:")
+    password=input("Введите пароль:")
+    while login=="BogdanSosnovskiy1234":
+        a=0
+        break
+    while password=="parol1234":
+        b=0
+        break
+    while a==1 and b==0:
+        print("Неправильный логин! Попробуйте снова.")
+        login=input("Введите логин:")
+        password=input("Введите пароль:")
+    while b==1 and a==0:
+        print("Неправильный пароль! Попробуйте снова.")
+        login=input("Введите логин:")
+        password=input("Введите пароль:")
+print("Вход успешно выполнен.")
