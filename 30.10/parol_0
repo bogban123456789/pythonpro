@@ -1,0 +1,6 @@
+password=input()
+while password!="parol1234567890987654321":
+    print("Неправильный пароль! Попробуйте снова.")
+    password=input()
+print("Вход успешно выполнен.")
+            
