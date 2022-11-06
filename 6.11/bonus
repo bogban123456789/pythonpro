@@ -1,0 +1,15 @@
+s=0
+bs=0
+ps=int(input("Введите сумму:"))
+bs=s+ps
+s=bs
+bonus=int(bs/10)
+print("Бонусы:",bonus)
+while bonus<1000:
+    ps=int(input("Введите сумму:"))
+    bs=s+ps
+    s=bs
+    bonus=int(bs/10)
+    print("Бонусы:",bonus)
+if bonus>=1000:
+    print("Бонусы накоплены, пора тратить!")
