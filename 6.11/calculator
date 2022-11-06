@@ -1,0 +1,16 @@
+o=input("Введите операцию: (+,-,*,/)")
+a=input("Введите первое число:")
+b=float(input("Введите второе число:"))
+c=0
+if o=="+":
+    c=a+b
+    print(c)
+if o=="-":
+    c=a-b
+    print(c)
+if o=="*":
+    c=a*b
+    print(c)
+if o=="/":
+    c=a*b
+    print(c)
