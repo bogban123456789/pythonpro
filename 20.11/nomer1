@@ -1,0 +1,8 @@
+n=int(input())
+summ=0
+a=0
+for step in range(n):
+    a=int(input(step+1))
+    summ=summ+a
+    a=0
+print('Результат:',summ)
