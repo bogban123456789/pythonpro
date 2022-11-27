@@ -1,0 +1,4 @@
+word=input('Введите слово: ')
+for i in (word):
+    i=str(i)
+    print(i)
