@@ -1,0 +1,13 @@
+f=1
+fc=1
+fp=1
+fpp=1
+n=int(input('Введите число:'))
+print('1')
+print('1')
+for f in range(1,n):
+    fc=fp+fpp
+    fpp=fp
+    fp=fc
+    if fc<=n:
+        print(fc)
