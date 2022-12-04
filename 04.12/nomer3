@@ -1,0 +1,17 @@
+am=int(input('Введите количество чисел:'))
+ad=0
+summa=0
+mox=0
+result=0
+for i in range(0,am):
+    ad=int(input('Введите число:'))
+    if ad<100:
+        if ad%2==0:
+            summa=summa+ad
+        if ad>mox:
+            mox=ad
+result=mox-summa
+if summa==0:
+    print('ОШИБКА: Нет чётных чисел')
+else:
+    print('Реузльтат вычитания из максимального числа суммы всех чёных чисел равен:',' ',result)
