@@ -1,0 +1,13 @@
+am=int(input('Введите количество чисел:'))
+summa=0
+kol=0
+ad=0
+for i in range (0,am):
+    ad=int(input('Введите число:'))
+    if ad>0:
+        kol=kol+1
+        summa=summa+ad
+if kol==0:
+    print('ОШИБКА: Нет положительных чисел')
+else:
+    print('Количество положительных чисел:',' ',kol,' ','Сумма чисел:',' ',summa)
