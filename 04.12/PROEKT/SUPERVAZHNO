@@ -1,0 +1,55 @@
+import pyautogui
+import time
+import pyperclip
+import keyboard
+import math
+import random
+print('Привет! Я хакер Лёха, и я могу либо помочь тебе, либо навредить. Всё зависит от шкалы отношения. Сейчас отношение равно 0, это значит что я нейтрален. Не зли меня, я могу удалить винду!')
+nast=int(0)
+fraza=""
+print('Скажи мне какую-нибудь фразу, я на неё отвечу.')
+print('###КОММЕНТАРИЙ ОТ БОГДАНА!!!!!!!! Мы не проходили нейросети, я не могу написать код чтобы ответ был на любую фразу. Только на заготовленные фразы')
+#сделать фразы: Лёха, ты такой крутой хакер!, Лёха, ты такой плохой хакер!, Взломай пентагон пожалуйста, Нет не надо удалять винду!!, Лёха, посмотри что на чём-то диске.
+for i in range(0,999999999999999999999999999999999999999):
+    if nast>10:
+        nast=10
+    else:
+        if nast<-10:
+            nast=-10
+    fraza=input()
+    if fraza=="Лёха, ты такой крутой хакер!" and nast<5 and nast>0:
+        nast=nast+1
+        pyautogui.alert(text='Спасибо!',title=nast,button='Пожалуйста')
+    if fraza=="Лёха, ты такой крутой хакер!" and nast>=5:
+        nast=nast+1
+        pyautogui.alert(text='Огромное спасибо!',title=nast,button='Пожалуйста!')
+    if fraza=="Лёха, ты такой плохой хакер!" and nast<5 and nast>0:
+        nast=nast-1
+        pyautogui.alert(text='Да всмысле?!',title=nast,button="В прямом!")
+    if fraza=="Лёха, ты такой плохой хакер!" and nast>5:
+        pyautogui.alert(text='Не уверен, но меня это очень оскорбило.',title=nast,button='Лёха извини')
+        nast=nast-2.5
+    if fraza=="Лёха, ты такой плохой хакер!" and nast>-5 and nast<0:
+        pyautogui.alert(text='Нет.',title=nast,button='Да.')
+    if fraza=="Лёха, ты такой плохой хакер!" and nast<-5 and nast>=-9:
+        pyautogui.alert(text="Когда настроение упадёт до -10, я удалю винду.",title=nast,button='НЕ НАДО!!!')
+    if fraza=="Лёха, ты такой плохой хакер!" and nast<-9:
+        pyautogui.alert(text="Я же тебя предупреждал.....",title="Ой=ой",button='НЕЕЕЕТ! НЕ НАДО!!!!')
+        time.sleep(10)
+        pyautogui.hoykey('win','r')
+        pyautogui.press('backspace')
+        pyautogui.write('cmd.exe')
+        pyautogui.press('enter')
+        time.sleep(0.5)
+        pyautogui.write('color a')
+        pyautogui.press('enter')
+        pyautogui.write('title УДАЛЕНИЕ_ВИНДЫ')
+        pyautogui.press('enter')
+        pyautogui.write('cd \\')
+        pyautogui.press('enter')
+        pyautogui.write('dir/s')
+        time.sleep(30)
+        pyautogui.hotkey('alt','f4')
+        nast=-9
+        pyautogui.alert(text='Да я ж пошутил)))',title=nast,button='Не смешно....')
+        
