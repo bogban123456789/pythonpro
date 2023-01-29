@@ -1,0 +1,9 @@
+n=int(input('Сколько элементов? '))
+a=[]
+max=0
+for i in range(n):
+    a.append(int(input('Введите число: ')))
+for b in range(len(a)):
+    if a[b]>max:
+        max=a[b]
+print(max)
