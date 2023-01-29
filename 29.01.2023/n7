@@ -1,0 +1,11 @@
+n=int(input('Сколько элементов? '))
+a=[]
+am=0
+for i in range(n):
+    a.append(int(input('Введите число: ')))
+for b in range(len(a)):
+    if a[b]>b:
+        #print(a[b])
+        am=am+1
+#print(a)
+print(am)
