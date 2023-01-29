@@ -1,0 +1,14 @@
+n=int(input('Сколько элементов? '))
+a=[]
+summa=0
+proizvedenie=1
+for i in range(n):
+    a.append(int(input('Введите число: ')))
+for b in range(len(a)):
+    if a[b]%2==0:
+        #print(a[b])
+        summa=summa+a[b]
+        proizvedenie=proizvedenie*a[b]
+#print(a)
+print(summa)
+print(proizvedenie)
