@@ -1,0 +1,9 @@
+a=[]
+n=0
+for i in range(1,61):
+    a.append(n)
+    n=n+1
+    if n==4:
+        n=0
+print(a)
+print(len(a))
