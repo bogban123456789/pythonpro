@@ -1,0 +1,11 @@
+n=int(input('Сколько элементов? '))
+a=[]
+summa=1
+for i in range(n):
+    a.append(int(input('Введите число: ')))
+for b in range(len(a)):
+    if a[b]<0 or a[b]>0:
+        #print(a[b])
+        summa=summa*a[b]
+#print(a)
+print(summa)
