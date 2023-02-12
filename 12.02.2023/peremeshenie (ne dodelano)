@@ -1,0 +1,32 @@
+m=[]
+for i in range(0,10):
+    m.append(['*','*','*','*','*','*','*','*','*','*'])
+m[0][0]='O'
+xp=0
+yp=0
+x=0
+y=0
+w=0
+for i in range(len(m)):
+       for j in range(len(m[i])):
+           print(m[i][j],end=' ')
+       print()
+while True:
+    w=0
+    xp=x
+    yp=y
+    print('Куда идти?')
+    x=int(input('x='))
+    y=int(input('y='))
+    x=x-1
+    y=y-1
+    if x<=0 or y<=0:
+        print('Неверные координаты')
+        w=1
+    if w==0:
+        m[x][y]='O'
+        m[xp][yp]='*'
+        for i in range(len(m)):
+           for j in range(len(m[i])):
+               print(m[i][j],end=' ')
+           print()
