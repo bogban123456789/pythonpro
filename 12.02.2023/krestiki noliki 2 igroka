@@ -1,0 +1,12 @@
+field=[['','',''],['','',''],['','','']]
+for a in range(0,9):
+    x=int(input('Какой столбец? (1-3)'))
+    y=int(input('Какая строка? (1-3)'))
+    x=x-1
+    y=y-1
+    z=str(input('Что вы хотите поставить? (x или o)'))
+    field[y][x]=z
+for i in range(len(field)):
+    for j in range(len(field[i])):
+        print(field[i][j],end=' ')
+    print()
