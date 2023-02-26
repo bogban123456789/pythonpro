@@ -1,0 +1,11 @@
+def ans(a,b):
+    if a>b:
+        c=a
+        a=b
+        b=c
+    for i in range(a+1,b+1):
+        a*=i
+    return a
+a=int(input('a='))
+b=int(input('b='))
+print(ans(a,b))
