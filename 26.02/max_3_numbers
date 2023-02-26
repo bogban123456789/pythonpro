@@ -1,0 +1,21 @@
+def maximal(a,b,c):
+    maxim=0
+    if a>b:
+        maxim=a
+    if b>a:
+        maxim=b
+    if b>c:
+        maxim=b
+    if c>b:
+        maxim=c
+    if a>c:
+        maxim=a
+    if c>a:
+        maxim=c
+    return maxim
+
+
+
+a=int(input())
+b=int(input())
+c=int(input())
