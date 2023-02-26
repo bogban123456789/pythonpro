@@ -1,0 +1,35 @@
+m=[]
+for i in range(0,10):
+    m.append(['*','*','*','*','*','*','*','*','*','*'])
+m[0][0]='O'
+x=0
+y=0
+x_try=0
+y_try=0
+command=""
+a=0 #A - верность команды
+while True:
+    command=str(input('Команда:'))
+    if command!='вверх' or command!='вниз' or command!='вправо' or command!='влево':
+        print('Неверная команда. Попробуйте снова. Возможные команды: \'вверх\', \'вниз\', \'влево\', \'вправо\'.')
+        a=1
+    if command=='вверх':
+        y=y-1
+    if command=='вниз':
+        y=y+1
+    if command=='вправо':
+        x=x-1
+    if command=='влево':
+        x=x+1
+    if x<0:
+        print('Туда ходить нельзя.')
+    if x>10:
+        print('Туда ходить нельзя.')
+    if y<0:
+        print('Туда ходить нельзя.')
+    if y>10:
+        print('Туда ходить нельзя.')
+   # for i in range(len(m)):
+        #for j in range(len(m[i])):
+        #print(m[i][j],end=' ')
+       # print()
