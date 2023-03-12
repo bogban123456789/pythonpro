@@ -1,0 +1,6 @@
+def sq(a,b):
+    for i in range(a,b+1):
+        print(i,'^ 2 = ',i*i)
+c=int(input('Граница квадратов 1: '))
+d=int(input('Граница квадратов 2: '))
+sq(c,d)
