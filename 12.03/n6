@@ -1,0 +1,13 @@
+def pn(n):
+    dely=0
+    ret=''
+    for i in range(1,n+1):
+        if n%i==0:
+            dely+=1
+    if dely==2:
+        ret='Число',n,'является простым'
+    else:
+        ret='Число',n,'является составным либо еденицей.'
+    return ret
+a=int(input('Введите число: '))
+print(pn(a))
