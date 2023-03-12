@@ -1,0 +1,22 @@
+d=0
+r=0
+e=0
+f=0
+g=0
+def find(a,b,c):
+    global r,d
+    if b<a:
+        d=a
+        a=b
+        b=d
+    if c>a:
+        if c<b:
+            r=1
+    if r==1:
+        return 'Число находится в промежутке'
+    if r==0:
+        return 'Число не находится в промежутке'
+e=int(input('Введите первую границу: '))
+f=int(input('Введите вторую границу: '))
+g=int(input('Введите число: '))
+print(find(e,f,g))
